@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/recipt_icon"
+        android:layout_width="85dp"
+        android:layout_height="121dp"
+        android:layout_marginStart="48dp"
+        android:layout_marginTop="16dp"
+        android:background="#4CAF50"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_receipt" />
+
+    <ImageView
+        android:id="@+id/payment_icon"
+        android:layout_width="85dp"
+        android:layout_height="121dp"
+        android:layout_marginStart="48dp"
+        android:layout_marginTop="7dp"
+        android:background="#4CAF50"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/recipt_icon"
+        app:srcCompat="@drawable/ic_monetization_on" />
+
+    <ImageView
+        android:id="@+id/sale_icon"
+        android:layout_width="85dp"
+        android:layout_height="121dp"
+        android:layout_marginStart="48dp"
+        android:layout_marginTop="11dp"
+        android:background="#4CAF50"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/payment_icon"
+        app:srcCompat="@drawable/ic_shopping_bag" />
+
+    <ImageView
+        android:id="@+id/ledger_icon"
+        android:layout_width="85dp"
+        android:layout_height="121dp"
+        android:layout_marginStart="48dp"
+        android:layout_marginTop="12dp"
+        android:background="#43A047"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/sale_icon"
+        app:srcCompat="@drawable/ic_menu_book" />
+
+    <ImageView
+        android:id="@+id/accounts_icon"
+        android:layout_width="85dp"
+        android:layout_height="121dp"
+        android:layout_marginStart="48dp"
+        android:layout_marginTop="14dp"
+        android:background="#4CAF50"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ledger_icon"
+        app:srcCompat="@drawable/ic_supervisor_account" />
+
+    <TextView
+        android:id="@+id/reciept"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="64dp"
+        android:text="Receipt"
+        android:textColor="#4CAF50"
+        android:textSize="24sp"
+        app:layout_constraintStart_toEndOf="@+id/recipt_icon"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/payment"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="87dp"
+        android:text="Payment"
+        android:textColor="#4CAF50"
+        android:textSize="24sp"
+        app:layout_constraintStart_toEndOf="@+id/payment_icon"
+        app:layout_constraintTop_toBottomOf="@+id/reciept" />
+
+    <TextView
+        android:id="@+id/sale"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="104dp"
+        android:text="Sale"
+        android:textColor="#4CAF50"
+        android:textSize="24sp"
+        app:layout_constraintStart_toEndOf="@+id/sale_icon"
+        app:layout_constraintTop_toBottomOf="@+id/payment" />
+
+    <TextView
+        android:id="@+id/ledger"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="88dp"
+        android:text="Receipt Records"
+        android:textColor="#43A047"
+        android:textSize="24sp"
+        app:layout_constraintStart_toEndOf="@+id/ledger_icon"
+        app:layout_constraintTop_toBottomOf="@+id/sale" />
+
+    <TextView
+        android:id="@+id/accounts"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="120dp"
+        android:text="Accounts"
+        android:textColor="#4CAF50"
+        android:textSize="24sp"
+        app:layout_constraintStart_toEndOf="@+id/accounts_icon"
+        app:layout_constraintTop_toBottomOf="@+id/ledger" />
+
+    <ImageView
+        android:id="@+id/logout"
+        android:layout_width="45dp"
+        android:layout_height="41dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:background="#4CAF50"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_log_out" />
+</androidx.constraintlayout.widget.ConstraintLayout>
